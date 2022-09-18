@@ -1,16 +1,12 @@
 {
-    "name": "UniRenameGameObjectAttribute.Editor",
-    "references": [
-        "GUID:2ef5550de3ae12946bf87f34df9ac919"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "name": "Kogane.RenameGameObjectAttribute.Runtime",
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": false,
+    "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false

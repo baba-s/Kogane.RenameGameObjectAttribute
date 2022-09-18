@@ -1,4 +1,4 @@
-# UniRenameGameObjectAttribute
+# Kogane Rename Game Object Attribute
 
 コンポーネントをアタッチした時にゲームオブジェクトの名前をコンポーネント名にリネームするエディタ拡張
 
