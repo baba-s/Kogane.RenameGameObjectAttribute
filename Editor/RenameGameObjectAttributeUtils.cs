@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
@@ -22,12 +23,12 @@ namespace Kogane.Internal
 
         private static void Rename( Component component )
         {
-            var type       = component.GetType();
-            var attributes = type.GetCustomAttributes( ATTRIBUTE_TYPE, true );
+            var type      = component.GetType();
+            var attribute = type.GetCustomAttribute<RenameGameObjectAttribute>( true );
 
-            if ( attributes.Length <= 0 ) return;
+            if ( attribute == null ) return;
 
-            var name       = type.Name;
+            var name       = attribute.Name ?? type.Name;
             var gameObject = component.gameObject;
 
             Undo.RecordObject( gameObject, "Rename" );
