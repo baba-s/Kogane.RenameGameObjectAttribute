@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,8 +7,6 @@ namespace Kogane.Internal
     [InitializeOnLoad]
     internal static class RenameGameObjectAttributeUtils
     {
-        private static readonly Type ATTRIBUTE_TYPE = typeof( RenameGameObjectAttribute );
-
         static RenameGameObjectAttributeUtils()
         {
             ObjectFactory.componentWasAdded -= OnComponentWasAdded;
